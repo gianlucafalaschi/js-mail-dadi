@@ -13,7 +13,7 @@ Consigli del giorno:
 4. torniamo a scrivere in italiano
 5. proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano" */
 
-
+/* 
 
 //Creare lista emails
 const emailList = [
@@ -32,23 +32,27 @@ const emailList = [
 //Chiedi all’utente la sua email,
 const userEmail = prompt("Inserisci la tua email");
 //controlla che la mail dell'utente sia nella lista di chi può accedere,
-
+// scorrere l' array di email
 let emailFound = false;
 
 for(let i = 0; i < emailList.length; i++) {
     const thisEmail = emailList[i];
     console.log(thisEmail);
-
+// per ogni email, se e' uguale a quella data dall'utente salvo nella variabile il fatto che
+//ho trovato l'emaiö
     if(thisEmail === userEmail) {
         emailFound = true;
         console.log(emailFound);
     }
 }
-// Se e' presente stampami vero
-//stampa un messaggio appropriato sull’esito del controllo.
+// Se #email l'ho trovata (controllo variabile)   stampami che l'utente puo' accedere
+//altrimenti scrivo che non puo' entrare
 if(emailFound === true) {
     alert('Puoi accedere');
 }else {
     alert("La tua email non e' corretta");
 }
+
+ */
+
 
